@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Market</title>
+
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="head">
+        <h1>Card Market</h1>
+        <img src="poke.png" alt="pooke" class="icon">
+    </div>
+    <div>
+        <button id="desc">By Price, descending</button>
+        <button id="asc">By Price, ascending</button>
+        <button id="alpha">By name, alphabetical</button>
+        <select name="type" id="types">
+            <option value="--Choose Type--">--Choose Type--</option>
+            <option value="Normal">Normal</option>
+            <option value="Fire">Fire</option>
+            <option value="Water">Water</option>
+            <option value="Grass">Grass</option>
+            <option value="Electric">Electric</option>
+            <option value="Ice">Ice</option>
+            <option value="Fighting">Fighting</option>
+            <option value="Poison">Poison</option>
+            <option value="Ground">Ground</option>
+            <option value="Flying">Flying</option>
+            <option value="Psychic">Psychic</option>
+            <option value="Bug">Bug</option>
+            <option value="Rock">Rock</option>
+            <option value="Ghost">Ghost</option>
+            <option value="Dark">Dark</option>
+            <option value="Dragon">Dragon</option>
+            <option value="Steel">Steel</option>
+            <option value="Fairy">Fairy</option>
+        </select>
+        <input id="searchbar" oninput="liveSearch()" type="text" name="search">
+        <label for="search">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-search"
+                viewBox="0 0 16 16">
+                <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+            </svg>
+        </label>
+    </div>
+    <div id="container"></div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
